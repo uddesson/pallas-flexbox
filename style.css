@@ -1,0 +1,375 @@
+/*Mobile-size*/
+
+body{
+    box-sizing: border-box;
+    background: fff;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hamburger-menu{
+    font-size: 2.6em;
+    text-align: right;
+    padding: 15px;
+    margin: 0px;
+}
+
+nav ul{
+    display: none;
+}
+ 
+.hero{
+    background-image: url(pallas-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 0;
+    margin: 0px;
+    padding: 140px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    line-height: 140%;
+    font-size: 0.91em;
+}
+
+h1{
+    float: left;
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    padding: 15px;
+    margin: 0px;
+}
+
+h2{
+    font-size: 2.1em;
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: center;
+    padding: 20px;  
+}
+
+h3{
+    font-size: 1.6em;
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: center;
+}
+
+.large-gallery-title{
+    display: none;
+}
+
+.large-gallery{
+    margin: auto;
+    max-width: 90%;
+}
+
+.large-box{
+    margin: 10px;    
+}
+
+.large-image{
+    max-width: 100%;
+}
+
+.large-box hr{
+    margin-bottom: 30px;
+}
+
+.vertical-line{
+    display: none;
+}
+
+.small-gallery{
+    display: none;
+}
+
+.small-gallery-title{
+    display: none;
+}
+
+.horizontal-line{
+    display: none;
+}
+
+.sidebar{
+    display: none;
+}
+
+footer{
+    height: 50px;
+    margin-top: 70px;
+    background-color: black;
+}
+
+
+
+/*Tablet-size*/
+@media screen and (min-width: 550px){
+         
+.hamburger-menu{
+    display: none;
+}    
+    
+nav{
+    margin: auto;
+    padding-top:10px;
+    height: 100px;
+}
+
+nav ul{
+    display: block;
+    padding: 0px;
+    max-width: 100%;
+}
+
+nav li{
+    list-style: none;  
+    text-align: center;
+    margin: 0px;
+    padding: 0px;   
+}
+
+nav a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin: 30px;
+}
+    
+h1{
+    float: none;
+    padding: 0px;
+    text-align: center;
+}   
+
+.hero{
+    margin-top: 20px;
+    padding: 180px;           
+}   
+    
+h3{
+   font-size: 1.1em;
+} 
+    
+.large-gallery-title{
+    display: none;
+}    
+
+.large-gallery{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+    
+.large-gallery-wrapper{
+    display: flex;    
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px;
+}
+    
+.large-gallery hr{
+    display: none;
+}
+    
+.large-box{
+    width: calc(100% / 2 - 40px);
+}
+    
+.large-box:nth-child(1){
+    margin-right: 20px;
+}
+.large-box:nth-child(2){
+    margin-left: 20px;
+}
+.large-box:nth-child(3){
+    margin-right: 20px;
+}
+.large-box:nth-child(4){
+    margin-left: 20px;
+}  
+    
+.small-gallery-title{
+    display: block;
+}
+    
+.horizontal-line{
+    display: block;
+    margin: auto;
+    width: calc(100% - 120px);
+}    
+    
+.small-gallery{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+    
+.small-gallery-wrapper{
+    display: flex;    
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+}
+    
+.small-box{
+    width: calc(100% / 4 - 60px);
+    padding: 20px;
+}    
+
+.small-image{
+    max-width: 100%;
+}    
+  
+.vertical-line{
+    display: none;   
+} 
+
+.sidebar{
+    display: none;
+}
+    
+}/*Closing tablet-size*/
+
+
+
+/*Desktop-size*/
+@media screen and (min-width: 1100px){
+
+nav ul{
+    display: block;
+    padding: 0px;
+    max-width: 100%;
+}  
+    
+.hero{
+    padding: 200px;
+}
+    
+.intro-text{
+    display: none;
+}
+    
+.grid{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}    
+
+.gallery-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding-top: 50px;
+}    
+
+.sidebar-grid{
+    padding: 50px; 
+    max-width: 20%;
+    justify-content: center;
+}
+    
+.large-gallery-title{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    padding: 0px;
+} 
+.large-gallery-wrapper{
+    padding-bottom: 5px;    
+    padding-top: 0px;  
+}       
+
+.large-gallery-title h2{
+    font-size: 1.8em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.small-gallery-title{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    padding: 0px;
+}   
+    
+.small-gallery-title h2{
+    font-size: 1.8em;
+    margin: 0px;
+    padding: 15px;
+}  
+       
+.vertical-line{
+    display: block;
+/* Försök få till %? */
+    height: 1190px;
+    margin-top: 50px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0.5px solid black;    
+}   
+    
+.sidebar{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+    
+.sidebar-wrapper{    
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px auto;
+}
+    
+.sidebar hr{
+    width: 100%;
+    margin: 10px auto;
+}
+
+.article{
+    width: 100%;
+}
+    
+.article-image{
+    width: 100%;
+    padding-top: 40px; 
+    padding-bottom: 20px; 
+}    
+    
+.sidebar h2{
+    font-size: 1.8em;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}  
+
+.sidebar h3{
+    text-align: left;
+    color: cadetblue;
+}
+
+.article-link{
+    color: cadetblue;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 400i;
+    text-align: right;
+}      
+    
+
+}/*Closing desktop-size*/
