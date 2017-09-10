@@ -20,7 +20,7 @@ nav ul{
 }
  
 .hero{
-    background-image: url(pallas-hero.jpg);
+    background-image: url(Images/pallas-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right 0;
@@ -229,15 +229,11 @@ h3{
 .small-image{
     max-width: 100%;
 }    
-  
-.vertical-line{
-    display: none;   
-} 
-
+    
 .sidebar{
     display: none;
 }
-    
+       
 }/*Closing tablet-size*/
 
 
@@ -259,10 +255,14 @@ nav ul{
     display: none;
 }
     
-.grid{
+.main-grid{
     width: 80%;
     margin: auto;
     display: flex;
+        display: -webkit-box;   
+        display: -moz-box;        
+        display: -ms-flexbox;      
+        display: -webkit-flex;
     flex-direction: row;
     justify-content: center;    
 }    
@@ -311,7 +311,7 @@ nav ul{
     margin: 0px;
     padding: 15px;
 }  
-              
+       
 .vertical-line{
     display: block;
     height: 1190px;
@@ -319,8 +319,8 @@ nav ul{
     border-top: 0px;
     border-bottom: 0px;
     border-right: 0px;
-    border-left: 0.5px solid black;    
-}  
+    border-left: 0.5px solid #6E6E6E;    
+}   
     
 .sidebar{
     display: flex;
@@ -340,11 +340,11 @@ nav ul{
     margin: 10px auto;
 }
 
-.article{
+.blogpost{
     width: 100%;
 }
     
-.article-image{
+.blogpost-image{
     width: 100%;
     padding-top: 40px; 
     padding-bottom: 20px; 
@@ -359,10 +359,11 @@ nav ul{
 
 .sidebar h3{
     text-align: left;
+    margin-top: 5px; 
     color: cadetblue;
 }
 
-.article-link{
+.blogpost-link{
     color: cadetblue;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
